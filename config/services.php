@@ -34,5 +34,11 @@ return [
             'channel' => env('SLACK_BOT_USER_DEFAULT_CHANNEL'),
         ],
     ],
+   
+    'django' => [
+        'overdue_url' => env('DJANGO_OVERDUE_URL'),
+    ],
+
+
 
 ];
