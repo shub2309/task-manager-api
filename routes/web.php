@@ -7,3 +7,8 @@ Route::get('/login', function () {
         'message' => 'Unauthenticated.'
     ], 401);
 })->name('login');
+
+Route::get('/clear-cache', function () {
+    \Illuminate\Support\Facades\Artisan::call('optimize:clear');
+    return 'Cache Cleared!';
+});
