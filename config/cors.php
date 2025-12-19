@@ -19,7 +19,7 @@ return [
 
     'allowed_methods' => ['*'],
 
-    'allowed_origins' => ['*'],
+    'allowed_origins' => ['https://task-manager-api-production-d43b.up.railway.app/api'],
 
     'allowed_origins_patterns' => [],
 
