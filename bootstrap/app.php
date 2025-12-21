@@ -17,8 +17,8 @@ return Application::configure(basePath: dirname(__DIR__))
 
 
     ->withMiddleware(function (Middleware $middleware): void {
-        $middleware->prepend(HandleCors::class);
         $middleware->trustProxies(at: '*');
+        $middleware->prepend(\App\Http\Middleware\CorsMiddleware::class);
     })
 
 
